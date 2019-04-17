@@ -18,7 +18,7 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "American Bishoujo Presents..." with dissolve
+    show text "Jogja Bishoujo Presents..." with dissolve
     with Pause(2)
 
     hide text with dissolve
