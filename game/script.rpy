@@ -18,7 +18,7 @@ label splashscreen:
     scene black
     with Pause(1)
 
-    show text "American Bishoujo Presents..." with dissolve
+    show text "Jogja Bishoujo Presents..." with dissolve
     with Pause(2)
 
     hide text with dissolve
@@ -41,7 +41,7 @@ label start:
 
     e "Kita baru saja mencoba mengubah bar story."
     
-    e "Next, kita coba ganti gambar protagonis nya."
+    e "Next, kita coba tampilkan gambar protagonis nya."
 
     #menampilkan karakter
     show kanade
