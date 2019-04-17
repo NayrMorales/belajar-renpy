@@ -4,10 +4,12 @@
 # name of the character.
 
 define e = Character("RNDang")
-define Kanade = Character("Rina")
+define Rina = Character("Rina")
+define Kanade = Character("Kanade")
 
 # definisikan gambar karakter
-image kanade = "rina/kisspng-gacha-resort-gacha-world-lunime-gacha-studio-anim-anime-gacha-5b627ce2d2a4d2.png"
+image rina = "rina/kisspng-gacha-resort-gacha-world-lunime-gacha-studio-anim-anime-gacha-5b627ce2d2a4d2.png"
+image kanade = "kanade/kanade_swimsuit.png"
 
 #definiskan gambar background
 image BGroom = "bg/bg1.png"
@@ -46,10 +48,38 @@ label start:
     
     e "Next, kita coba tampilkan gambar protagonis nya."
 
+    menu:
+
+        e "Siapa kamu pilih?"
+
+        "Rina aja.":
+
+            jump rinaYes
+
+        "Kanade dong.":
+
+            jump kanadeYes
+
+
     #menampilkan karakter
+
+label kanadeYes:
+
     show kanade
 
     Kanade "Hallo dunia!"
+
+    e "Dah muncul tuh gambarnya"
+
+    e "Sampai jumpa!"
+
+    return  
+
+label rinaYes:
+
+    show rina
+
+    Rina "Hallo dunia!"
 
     e "Dah muncul tuh gambarnya"
 
