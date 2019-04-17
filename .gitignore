@@ -5,3 +5,4 @@ traceback.txt
 *.rpyc
 errors.txt
 projects.json
+/tl/*.rpymc
