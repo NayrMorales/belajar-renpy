@@ -3,13 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("RNDang")
+define e = Character("Protagonis")
 define Rina = Character("Rina")
 define Kanade = Character("Kanade")
+define Mira = Character("Mira")
 
 # definisikan gambar karakter
 image rina = "rina/kisspng-gacha-resort-gacha-world-lunime-gacha-studio-anim-anime-gacha-5b627ce2d2a4d2.png"
-image kanade = "kanade/kanade_swimsuit.png"
+image mira = "mira/anime-png-30700.png"
 
 #definiskan gambar background
 image BGroom = "bg/bg1.png"
@@ -42,48 +43,60 @@ label start:
     scene BGroom
 
     #menampilkan text sesuai karakter
-    e "Hallo World!"
+    "Di siang itu."
 
-    e "Kita baru saja mencoba mengubah bar story."
+    "Aku sedang tidur siang di bawah pohon besar dekat pekarangan rumah."
+
+    show rina
+
+    Rina "Ngapain lu disitu?"
+
+    Rina "Bangun uy! Dasar pemalas."
     
-    e "Next, kita coba tampilkan gambar protagonis nya."
+    "Rina. Gadis kota yang juga teman masa kecil ku saat masih SD."
 
     menu:
 
-        e "Siapa kamu pilih?"
+        "Mencoba bangun.":
 
-        "Rina aja.":
+            jump bangun
 
-            jump rinaYes
+        "Mencoba tidur kembali.":
 
-        "Kanade dong.":
-
-            jump kanadeYes
+            jump tidur
 
 
     #menampilkan karakter
 
-label kanadeYes:
+label bangun:
 
-    show kanade
+    e "Apaan sih. Gangguan orang tidur aja."
 
-    Kanade "Hallo dunia!"
+    Rina "Hihi... Dah siang masih aja molor. Sini bantuin aku gelar tikar di sini."
 
-    e "Dah muncul tuh gambarnya"
+    e "Mau ngapain gelar tikar di sini?"
 
-    e "Sampai jumpa!"
+    Rina "Buat jualan.. Ya buat duduk lah, dasar ga peka!"
+
+    Rina "Tidur kok nggak beralas tikar."
+
+    e "Menyatu dengan alam itu juga bagian dari rasa syukur, Rin."
+
+    Rina "Gitu aja terus"
+
+    "Dan kami pun menikmati siang hari nan sejuk bersama."
+
+    "{b}Good Ending{/b}."
 
     return  
 
-label rinaYes:
+label tidur:
 
-    show rina
+    Rina "Dasar, pemalas!"
 
-    Rina "Hallo dunia!"
+    "Dan si Rina pergi dan aku terlelap dengan mimpi indahku."
 
-    e "Dah muncul tuh gambarnya"
-
-    e "Sampai jumpa!"
+    "{b}Bad Ending{/b}."
 
     # This ends the game.
 
